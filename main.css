@@ -494,15 +494,16 @@ a {
 }
 
 .card .heart__icon {
-  height: 25px;
-  width: 25px;
+  height: 20px;
+  width: 20px;
+  padding-top: 5px;
 }
 
 .card .heart__icon path {
   fill-opacity: 0;
   -webkit-transition: all 1.3s;
   transition: all 1.3s;
-  stroke-width: 15px;
+  stroke-width: 20px;
 }
 
 .card .heart__icon path:hover {
@@ -531,15 +532,16 @@ a {
 }
 
 .menu__title .heart__icon {
-  height: 25px;
-  width: 25px;
+  height: 20px;
+  width: 20px;
+  padding-top: 5px;
 }
 
 .menu__title .heart__icon path {
   fill-opacity: 0;
   -webkit-transition: all 1.3s;
   transition: all 1.3s;
-  stroke-width: 15px;
+  stroke-width: 20px;
 }
 
 .menu__title .heart__icon path:hover {

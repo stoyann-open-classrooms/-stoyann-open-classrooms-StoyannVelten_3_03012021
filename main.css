@@ -161,6 +161,72 @@ a {
   }
 }
 
+.container {
+  background-color: rgba(111, 111, 111, 0.442);
+  height: 100vh;
+  position: absolute;
+  width: 100%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 100;
+  visibility: hidden;
+}
+
+.container .load {
+  width: 30vh;
+  height: 22.5vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.load__bar {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(29%, #9356dc), to(#ff79da));
+  background: linear-gradient(180deg, #9356dc 29%, #ff79da 100%);
+  height: 100%;
+  width: 3vh;
+  -webkit-animation: bars 1000ms backwards infinite;
+          animation: bars 1000ms backwards infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+.load__bar--1 {
+  -webkit-animation-delay: 200ms;
+          animation-delay: 200ms;
+}
+
+.load__bar--2 {
+  -webkit-animation-delay: 400ms;
+          animation-delay: 400ms;
+}
+
+.load__bar--3 {
+  -webkit-animation-delay: 600ms;
+          animation-delay: 600ms;
+}
+
+.load__bar--4 {
+  -webkit-animation-delay: 800ms;
+          animation-delay: 800ms;
+}
+
+.load__bar--5 {
+  -webkit-animation-delay: 1000ms;
+          animation-delay: 1000ms;
+}
+
 .badge {
   width: 80px;
   height: 30px;
@@ -180,6 +246,28 @@ a {
 
 .back__icon a i {
   font-size: 2rem;
+}
+
+@-webkit-keyframes bars {
+  0% {
+    -webkit-transform: scaleY(0.5);
+            transform: scaleY(0.5);
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+}
+
+@keyframes bars {
+  0% {
+    -webkit-transform: scaleY(0.5);
+            transform: scaleY(0.5);
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
 }
 
 .header__logo {

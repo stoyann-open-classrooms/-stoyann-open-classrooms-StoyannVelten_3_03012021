@@ -44,12 +44,9 @@
 }
 // titres pages menu
 
-@mixin restaurant__name {
-    font-family: 'Shrikhand', cursive;
-    @include font-size(1.8rem, normal);
 
 
-}
+
 // titre menu-item
 
 @mixin title__section {

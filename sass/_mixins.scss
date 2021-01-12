@@ -1,0 +1,100 @@
+@mixin bg-function {
+    background-color: $grey;
+    margin: 20px;
+    padding-top: 15px;
+    height: 50px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, .25);
+    transition: 0.5s;
+    min-width: 290px;
+    max-width: 350px;
+
+
+    i{
+        transition: 0.2s;
+       
+
+    }
+    &:hover{
+    box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, .40);
+    background:  rgba(146, 86, 220, 0.156) 29%,;
+
+    i{
+        color: $color-primary;
+    }
+
+
+
+    }
+}
+
+
+
+// titre section index
+
+@mixin title-section {
+    font-size: 1.3em;
+    font-weight: bolder;
+    margin-left: 40px;
+     margin-top: 30px;
+    align-self: flex-start;
+
+
+}
+// titres pages menu
+
+@mixin restaurant__name {
+    font-family: 'Shrikhand', cursive;
+    @include font-size(1.8rem, normal);
+
+
+}
+// titre menu-item
+
+@mixin title__section {
+    text-transform: uppercase;
+    @include font-size(1rem,bolder);
+    animation: apparition 0.8s ease-out;
+// soulignement titre menu-item
+     &::after {
+        content: "";
+        background-color: $color-tiertiary;
+    @include element-size( 40px,2px);
+        display: block;
+        animation: apparition 1.3s ease-out 0.4s;
+
+    }
+}
+
+// cards plat
+
+@mixin menu-bg {
+    width: 300px;
+    height: 50px;
+    max-width: 300px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, .25);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    animation: apparition 1s ease-in-out;
+    transform: scale(1);
+    transition: 0.2s;
+    
+    
+
+    &:hover {
+    box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, .60);
+    transform: scale(1.01);
+    }
+
+// ICONE COEURS CARDS RESTAURANTS
+    .heart__icon{
+        @include heart;
+    }
+
+}
+

@@ -1,0 +1,327 @@
+@import "./sass/reset";
+@import "./sass/variables";
+@import "./sass/mixins";
+@import "./sass/layout";
+@import "./sass/components";
+@import "./sass/animation";
+
+
+.header__logo {
+    font-family: 'Shrikhand', cursive;
+    font-size: 2rem;
+    margin: auto;
+    padding-top: 15px;
+    padding-left: 10px;
+}
+
+// SECTION LOCATION
+
+.fa-map-marker-alt {
+    margin-right: 20px;
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+
+.city {
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+
+// titres du site page index
+.title {
+    background-color: $grey;
+    padding: 40px 30px 60px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    &__big {
+        margin-bottom: 10px;
+        font-size: 1.9rem;
+        font-weight: 700;
+    }
+
+    &__subtitle {
+        font-size: 1.2rem;
+        font-weight: 300;
+        margin-bottom: 30px;
+    }
+
+    &__btn {
+        @include btn;
+    }
+
+}
+.function__title{
+   margin-top: 20px;
+   font-weight: 700;
+   padding-left: 35px;
+}
+
+.function__content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 15px;
+ 
+        .function__element{
+            @include bg-function;
+            font-size: 1rem;
+            font-weight: 600;
+             position: relative;
+
+
+            .circle {
+                width: 20px;
+                height: 20px;
+                background-color: $color-primary;
+                color: #fff;
+                display: block;
+                border-radius: 50%;
+                left: -50px;
+                position: absolute;
+                left: -5px;
+                text-align: center;
+            }
+            
+            
+            i {
+                font-size: 1rem;
+                font-weight: 600;
+                color: #7e7e7e;
+                justify-self: flex-end;
+                position: relative;
+                 left: -20px;
+            }
+
+        }
+
+    }
+
+.restaurant__title{
+        margin-top: 20px;
+        margin-left: 20px;
+        padding-top: 20px;
+        padding-left: 20px;
+        font-weight: 700;
+    }
+.restaurants__cards{
+        display: flex;
+       flex-wrap: wrap;
+       justify-content: space-around;
+    }
+
+    // cards restaurants
+
+.card {
+    background-color: rgb(255, 255, 255);
+    border-radius: 1rem;
+    display: flex;
+    max-width: 300px;
+    flex-direction: column;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, .25);
+    transition: 0.5s ease-in-out;
+    transform: scale(1);
+
+    &__thumb {
+         max-height:250px ;
+        border: 0 solid transparent;
+        border-radius: 1rem 1rem 0 0;
+        box-shadow: none;
+        object-fit: cover;
+        overflow: hidden;
+    }
+
+    &__footer {
+        padding: 10px 10px 5px 5px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    &:hover {
+        box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, .65);
+        transform: scale(1.05);
+    }
+
+    .heart__icon {
+        @include heart;
+      
+       svg{
+          padding-left: 20px;
+          padding-top: 10px;
+       }
+    
+   
+    }
+
+}
+.head__thumbs{
+    img{
+    height: 300px;
+    width: 100%;
+    object-fit: cover
+}
+}
+
+
+.menu__title{
+    display: flex;
+     align-items: center;
+    
+    .heart__icon{
+        @include heart;
+        svg{ 
+        margin-top: 10px;
+        padding-left: 50px;
+        
+        
+    }
+
+    }
+    .restaurant__name{
+        font-family: 'Shrikhand', cursive;
+        letter-spacing: 0.5px;
+        font-weight: 400;
+        font-size: 1.3rem;
+        margin-left: 20px;
+        margin-top: 20px;
+
+
+    }
+}
+
+
+
+
+
+
+.menu__bg{
+   
+    height: 50px;
+    width: 300px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, .25);
+    padding: 10px 10px 10px 10px;
+    // overflow: hidden;
+    // align-items: center;
+   
+
+    }
+   .menu__title{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+   }
+   .menu__description{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+   }
+.menu__price{
+    flex: 1;
+    position: relative;
+    top: 13px;
+
+  
+}
+.menu__confirm{
+    background-color: #99e2d0;
+    color: white;
+    height: 50px;
+    width: 50px;
+    border-radius: 0px 10px 10px 0px;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 1.8rem;
+    // margin-left: 62px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

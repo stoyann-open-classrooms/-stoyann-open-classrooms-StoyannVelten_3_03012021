@@ -598,7 +598,7 @@ a {
 }
 
 .menu__bg {
-  max-width: 320px;
+  width: 320px;
   height: 50px;
   background-color: white;
   border-radius: 10px;
@@ -636,7 +636,7 @@ a {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 .menu__description {
@@ -644,6 +644,7 @@ a {
   white-space: nowrap;
   text-overflow: ellipsis;
   font-weight: 300;
+  font-size: 0.7rem;
 }
 
 .menu__price {

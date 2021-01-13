@@ -76,13 +76,17 @@ margin-top: 50px;
     background-color:white;
     border-radius: 40px;
     transform: translate(0px, -50px);
-   
     max-width: 1200px;
      margin: auto;
-    height: 740px;
+    height: auto;
     align-items: center;
    
 } 
+.menu__containeur{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
 @media only screen and (min-width: 1000px) {
     .site__content{

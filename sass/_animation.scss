@@ -48,10 +48,12 @@
     80%{
         stroke-dashoffset: 3120;
         stroke: $color-primary;
+      
     }
     100%{
         stroke-dashoffset: 3120;
         fill-opacity: 1;
         stroke: $color-primary;
+        
     }
 }

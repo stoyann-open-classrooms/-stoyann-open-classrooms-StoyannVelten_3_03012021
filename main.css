@@ -173,6 +173,7 @@ a {
 }
 
 .container {
+  background-color: rgba(171, 171, 171, 0.374);
   height: 100vh;
   position: absolute;
   width: 100%;

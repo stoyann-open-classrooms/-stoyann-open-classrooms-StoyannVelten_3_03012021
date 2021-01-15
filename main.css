@@ -661,6 +661,11 @@ a {
           transform: translate(-50px, 0px);
 }
 
+.menu__header:hover + .checkbox .menu__confirm .menu__icone {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
 .menu__title {
   overflow: hidden;
   white-space: nowrap;
@@ -696,5 +701,12 @@ a {
   font-size: 1.8rem;
   position: relative;
   left: 50px;
+}
+
+.menu__confirm .menu__icone {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transition-duration: 0.8s;
+          transition-duration: 0.8s;
 }
 /*# sourceMappingURL=main.css.map */

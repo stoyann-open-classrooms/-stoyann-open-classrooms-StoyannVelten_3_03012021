@@ -243,6 +243,13 @@
   
     &:hover + .checkbox {
         transform: translate(-50px, 0px);
+        .menu__confirm{
+            .menu__icone{
+                transform: rotate(0deg);
+               
+
+            }
+        }
      
     } 
       
@@ -285,6 +292,12 @@
     font-size: 1.8rem;
     position: relative;
     left: 50px;
+    
+    .menu__icone{
+        transform: rotate(180deg);
+        transition-duration: 0.8s;
+
+    }
 
   }
   

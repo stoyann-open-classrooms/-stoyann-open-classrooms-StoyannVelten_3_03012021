@@ -37,3 +37,21 @@
         transform: translateY(0px);
     }
 }
+@keyframes animate-heart {
+    0%{
+        stroke-dashoffset: 0;
+    }
+    40%{
+        stroke-dashoffset: 1560;
+      
+    }
+    80%{
+        stroke-dashoffset: 3120;
+        stroke: $color-primary;
+    }
+    100%{
+        stroke-dashoffset: 3120;
+        fill-opacity: 1;
+        stroke: $color-primary;
+    }
+}

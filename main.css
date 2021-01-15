@@ -335,6 +335,42 @@ a {
   }
 }
 
+@-webkit-keyframes animate-heart {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  40% {
+    stroke-dashoffset: 1560;
+  }
+  80% {
+    stroke-dashoffset: 3120;
+    stroke: #9356DC;
+  }
+  100% {
+    stroke-dashoffset: 3120;
+    fill-opacity: 1;
+    stroke: #9356DC;
+  }
+}
+
+@keyframes animate-heart {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  40% {
+    stroke-dashoffset: 1560;
+  }
+  80% {
+    stroke-dashoffset: 3120;
+    stroke: #9356DC;
+  }
+  100% {
+    stroke-dashoffset: 3120;
+    fill-opacity: 1;
+    stroke: #9356DC;
+  }
+}
+
 .header__logo {
   font-family: 'Shrikhand', cursive;
   font-size: 2rem;
@@ -570,11 +606,13 @@ a {
   transition: all 1.3s;
   stroke-width: 20px;
   stroke: black;
+  stroke-dasharray: 1560;
+  stroke-dashoffset: 0;
 }
 
 .card .heart__icon path:hover {
-  fill-opacity: 1;
-  stroke-opacity: 0;
+  -webkit-animation: animate-heart 2s linear forwards;
+          animation: animate-heart 2s linear forwards;
 }
 
 .card .heart__icon svg {
@@ -610,11 +648,13 @@ a {
   transition: all 1.3s;
   stroke-width: 20px;
   stroke: black;
+  stroke-dasharray: 1560;
+  stroke-dashoffset: 0;
 }
 
 .page__title .heart__icon path:hover {
-  fill-opacity: 1;
-  stroke-opacity: 0;
+  -webkit-animation: animate-heart 2s linear forwards;
+          animation: animate-heart 2s linear forwards;
 }
 
 .page__title .heart__icon svg {

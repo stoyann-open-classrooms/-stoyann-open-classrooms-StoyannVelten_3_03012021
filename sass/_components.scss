@@ -78,17 +78,26 @@
   height: 30px;
  width: 30px;
   padding-top: 5px;
+ 
+ 
     path{
         fill-opacity: 0;
         transition: all 1.3s ;
         stroke-width: 20px;
         stroke: black;
+        stroke-dasharray: 1560;
+        stroke-dashoffset: 0;
+       
+       
         
         
      }
      path:hover{
-         fill-opacity: 1;
-         stroke-opacity: 0;
+        //  fill-opacity: 1;
+        //  stroke-opacity: 1;
+         animation: animate-heart 2s linear forwards;
+         
+         
      }
 
 }

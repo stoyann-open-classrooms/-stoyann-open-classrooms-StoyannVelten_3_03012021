@@ -203,6 +203,7 @@
 .sectMenu{
     margin-top: 20px;
     margin-left: 15px;
+    animation: apparition 1s ease-out 0.4s;
 }
 .sectMenu__title{
     font-size: 1.2rem;
@@ -212,6 +213,8 @@
         width: 40px;
         height: 3px;
         display: block;
+    animation: apparition 1.3s ease-out 0.2s;
+
     }
 }
 .checkbox{

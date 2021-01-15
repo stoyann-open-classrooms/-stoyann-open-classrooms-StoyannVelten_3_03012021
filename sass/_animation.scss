@@ -7,3 +7,18 @@
         transform: scaleY(1.0);
     }
 }
+
+
+@keyframes loader-opacity {
+    0% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+       
+    }
+}

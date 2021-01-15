@@ -187,7 +187,8 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
   z-index: 100;
-  opacity: 1;
+  -webkit-animation: loader-opacity 4s forwards;
+          animation: loader-opacity 4s forwards;
 }
 
 .container .load {
@@ -277,6 +278,30 @@ a {
   100% {
     -webkit-transform: scaleY(1);
             transform: scaleY(1);
+  }
+}
+
+@-webkit-keyframes loader-opacity {
+  0% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes loader-opacity {
+  0% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 
@@ -504,8 +529,8 @@ a {
 }
 
 .card .heart__icon {
-  height: 20px;
-  width: 20px;
+  height: 30px;
+  width: 30px;
   padding-top: 5px;
 }
 
@@ -514,10 +539,12 @@ a {
   -webkit-transition: all 1.3s;
   transition: all 1.3s;
   stroke-width: 20px;
+  stroke: black;
 }
 
 .card .heart__icon path:hover {
   fill-opacity: 1;
+  stroke-opacity: 0;
 }
 
 .card .heart__icon svg {
@@ -542,8 +569,8 @@ a {
 }
 
 .page__title .heart__icon {
-  height: 20px;
-  width: 20px;
+  height: 30px;
+  width: 30px;
   padding-top: 5px;
 }
 
@@ -552,10 +579,12 @@ a {
   -webkit-transition: all 1.3s;
   transition: all 1.3s;
   stroke-width: 20px;
+  stroke: black;
 }
 
 .page__title .heart__icon path:hover {
   fill-opacity: 1;
+  stroke-opacity: 0;
 }
 
 .page__title .heart__icon svg {
@@ -636,7 +665,7 @@ a {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 
 .menu__description {

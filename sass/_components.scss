@@ -1,7 +1,7 @@
                     
   
 .container{
-    // background-color: rgba(111, 111, 111, 0.442);
+    
     height: 100vh;
     position: absolute;
     width: 100%;
@@ -10,14 +10,13 @@
     align-items: center;
     justify-content: center;
     z-index: 100;
-    opacity: 1;
-    // visibility: hidden;
+    animation: loader-opacity 4s forwards;
     .load {
         width: $size*10;
         height: $size*7.5;
         display: flex;
         justify-content: space-evenly;
-        // opacity: 1;
+
     }
 }
 
@@ -76,18 +75,20 @@
 // LES COEURS 
 
 @mixin heart {
-  height: 20px;
-  width: 20px;
+  height: 30px;
+ width: 30px;
   padding-top: 5px;
     path{
         fill-opacity: 0;
         transition: all 1.3s ;
         stroke-width: 20px;
+        stroke: black;
         
         
      }
      path:hover{
          fill-opacity: 1;
+         stroke-opacity: 0;
      }
 
 }

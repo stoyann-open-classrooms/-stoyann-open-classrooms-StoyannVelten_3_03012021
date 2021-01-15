@@ -258,14 +258,18 @@
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
+   
+  
+    
   }
   .menu__description{
     overflow: hidden;
     white-space: nowrap;
-    text-overflow: ellipsis;
+     text-overflow: ellipsis;
     font-weight: 300;
     font-size: 0.7rem;
+    
   
   }
 
@@ -276,7 +280,8 @@
     margin-top: 20px;
     position: relative;
     left: 40px;
-    top: 5px;
+    top: 10px;
+    font-size: 14px;
    
    
      

@@ -290,6 +290,7 @@ a {
   }
   100% {
     opacity: 0;
+    display: none;
   }
 }
 
@@ -302,6 +303,7 @@ a {
   }
   100% {
     opacity: 0;
+    display: none;
   }
 }
 
@@ -670,7 +672,7 @@ a {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 
 .menu__description {
@@ -687,7 +689,8 @@ a {
   margin-top: 20px;
   position: relative;
   left: 40px;
-  top: 5px;
+  top: 10px;
+  font-size: 14px;
 }
 
 .menu__confirm {

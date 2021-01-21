@@ -1,11 +1,12 @@
-.header{
+.header {
     background-color: rgb(255, 255, 255);
     box-shadow: 0 0 0.5rem #00000073;
     display: flex;
     padding-bottom: 10px;
-    
-  
+
+
 }
+
 .location {
     background-color: #eaeaea;
     height: 70px;
@@ -15,30 +16,37 @@
     align-items: center;
     padding-top: 10px;
     text-align: center;
-   
+
 
 }
 
-
-#sect-restau{
-    background-color:$grey;
+#sect-restau {
+    background-color: $grey;
 }
-
 
 .footer {
     background-color: $dark;
     height: 200px;
     padding: 20px;
-    .footer__content{
+
+    .footer__content {
         max-width: 1200px;
         margin: auto;
-        }
-        
+       
+       .footer__logo{
+           color: white;
+           font-family: 'Shrikhand', cursive;
+           font-size: 1.3rem;
+           margin-left: 10px;
+           margin-bottom: 10px;
+       }
+       
+    }
+
     &__body {
         margin-left: 10px;
         color: #fff;
         max-width: 1200px;
-      
 
         li {
             margin-bottom: 10PX;
@@ -60,65 +68,66 @@
 
 }
 
-.site__content{
+.site__content {
     max-width: 1200px;
     margin: auto;
 }
 
-.menu__all{
+.menu__all {
     display: flex;
-  justify-content: center;
-   flex-wrap: wrap;
-margin-top: 50px;
-
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
 }
-.menu-container{
-    background-color:white;
+
+.menu-container {
+    background-color: white;
     border-radius: 40px;
     transform: translate(0px, -50px);
     max-width: 1200px;
-     margin: auto;
+    margin: auto;
     height: auto;
     align-items: center;
-   
-} 
-.menu__containeur{
+}
+
+.menu__containeur {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
 @media only screen and (min-width: 1000px) {
-    .site__content{
-       display: grid;
-       grid-template-columns: 30% 70% ;
+    .site__content {
+        display: grid;
+        grid-template-columns: 30% 70%;
 
-       .function{
-           grid-column: 1/2;
-          padding: 20px;
-          margin-top: 20px;
-       }
-       #sect-restau{
-         
-           grid-column: 2/3;
-          margin-top: 20px;
-          margin-bottom: 20px;
-           border-radius: 20px;
-       }
+        .function {
+            grid-column: 1/2;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        #sect-restau {
+
+            grid-column: 2/3;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            border-radius: 20px;
+        }
     }
-    
-    
 
 }
+
 @media only screen and (min-width: 700px) {
 
-    .function__content{
+    .function__content {
         display: flex;
     }
 
 }
+
 @media only screen and (min-width: 1000px) {
-    .function__content{
-        display:block;
+    .function__content {
+        display: block;
     }
 }

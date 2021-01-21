@@ -1,13 +1,14 @@
+// loader
 @keyframes bars {
     0% {
         transform: scaleY(0.5);
-        
+
     }
+
     100% {
         transform: scaleY(1.0);
     }
 }
-
 
 @keyframes loader-opacity {
     0% {
@@ -17,14 +18,16 @@
     80% {
         opacity: 1;
     }
+
     100% {
         opacity: 0;
         display: none;
         z-index: -1;
-       
+
     }
 }
 
+// animation chargement des pages menus
 @keyframes apparition {
     from {
         opacity: 0;
@@ -37,23 +40,28 @@
         transform: translateY(0px);
     }
 }
+
+// animation du coeur 
 @keyframes animate-heart {
-    0%{
+    0% {
         stroke-dashoffset: 0;
     }
-    40%{
+
+    40% {
         stroke-dashoffset: 1560;
-      
+
     }
-    80%{
+
+    80% {
         stroke-dashoffset: 3120;
         stroke: $color-primary;
-      
+
     }
-    100%{
+
+    100% {
         stroke-dashoffset: 3120;
         fill-opacity: 1;
         stroke: $color-primary;
-        
+
     }
 }

@@ -56,35 +56,36 @@ a {
 
 #sect-restau {
   background-color: #f6f6f6;
+  margin-top: 30px;
 }
 
 .footer {
   background-color: #353535;
   height: 200px;
-  padding: 20px;
+  padding: 10px;
 }
 
 .footer .footer__content {
   max-width: 1200px;
-  margin: auto;
 }
 
 .footer .footer__content .footer__logo {
   color: white;
   font-family: 'Shrikhand', cursive;
   font-size: 1.3rem;
-  margin-left: 10px;
+  margin-left: 20px;
   margin-bottom: 10px;
+  margin-top: 20px;
 }
 
 .footer__body {
-  margin-left: 10px;
+  margin-left: 20px;
   color: #fff;
   max-width: 1200px;
 }
 
 .footer__body li {
-  margin-bottom: 10PX;
+  margin-bottom: 10px;
 }
 
 .footer__body i {
@@ -160,8 +161,7 @@ a {
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
     grid-column: 2/3;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 20px 0;
     border-radius: 20px;
   }
 }
@@ -182,7 +182,7 @@ a {
 
 .container {
   background-color: rgba(171, 171, 171, 0.374);
-  height: 100vh;
+  height: 100%;
   position: absolute;
   width: 100%;
   margin: auto;
@@ -220,6 +220,7 @@ a {
   -webkit-transform: translate(210px, 10px);
           transform: translate(210px, 10px);
   text-align: center;
+  color: #10392f;
 }
 
 .cls-1 {
@@ -426,7 +427,7 @@ a {
 }
 
 .title__big {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   font-size: 1.9rem;
   font-weight: 700;
 }
@@ -434,7 +435,7 @@ a {
 .title__subtitle {
   font-size: 1.2rem;
   font-weight: 300;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .title__btn {
@@ -515,7 +516,7 @@ a {
 .function__content .function__element:hover {
   -webkit-box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.4);
           box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.4);
-  background: rgba(146, 86, 220, 0.156) 29%;
+  background: rgba(146, 86, 220, 0.156) 30%;
 }
 
 .function__content .function__element:hover i {
@@ -545,10 +546,8 @@ a {
 }
 
 .restaurant__title {
-  margin-top: 20px;
-  margin-left: 20px;
-  padding-top: 20px;
-  padding-left: 20px;
+  margin: 20px 0 0 20px;
+  padding: 20px 0 0 20px;
   font-weight: 700;
 }
 
@@ -573,8 +572,7 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-bottom: 20px;
-  margin-top: 20px;
+  margin: 20px 0;
   -webkit-box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
           box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
   -webkit-transition: 0.5s ease-in-out;
@@ -632,8 +630,7 @@ a {
 }
 
 .card .heart__icon svg {
-  padding-left: 20px;
-  padding-top: 10px;
+  padding: 10px 0 0 20px;
 }
 
 .head__thumbs img {
@@ -683,13 +680,11 @@ a {
   letter-spacing: 0.5px;
   font-weight: 400;
   font-size: 1.3rem;
-  margin-left: 5%;
-  margin-top: 20px;
+  margin: 20px 0 0 20px;
 }
 
 .sectMenu {
-  margin-top: 20px;
-  margin-left: 15px;
+  margin: 20px 0 0 15px;
   -webkit-animation: apparition 1s ease-out 0.4s;
           animation: apparition 1s ease-out 0.4s;
 }
@@ -717,7 +712,7 @@ a {
 }
 
 .menu__bg {
-  width: 320px;
+  width: 310px;
   height: 50px;
   background-color: white;
   border-radius: 10px;
@@ -739,10 +734,10 @@ a {
 
 .menu__header {
   padding-right: 20px;
-  padding-left: 10px;
   cursor: pointer;
 }
 
+fon
 .menu__header:hover {
   overflow: hidden;
   white-space: nowrap;
@@ -763,7 +758,7 @@ a {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 
 .menu__description {
@@ -772,11 +767,11 @@ a {
   text-overflow: ellipsis;
   font-weight: 300;
   font-size: 0.7rem;
+  margin-top: 4px;
 }
 
 .menu__price {
   font-weight: 700;
-  padding-right: 10px;
   margin-top: 20px;
   position: relative;
   left: 40px;
@@ -788,13 +783,13 @@ a {
   background-color: #99e2d0;
   color: white;
   height: 52px;
-  width: 50px;
+  width: 52px;
   border-radius: 0px 10px 10px 0px;
   padding-top: 10px;
   text-align: center;
   font-size: 1.8rem;
   position: relative;
-  left: 55px;
+  left: 52px;
 }
 
 .menu__confirm .menu__icone {

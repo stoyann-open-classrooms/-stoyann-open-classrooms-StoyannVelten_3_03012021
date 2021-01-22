@@ -9,14 +9,14 @@
     font-family: 'Shrikhand', cursive;
     font-size: 2rem;
     margin: auto;
-    padding-top: 15px;
-    padding-left: 10px;
+    padding-top:  $padding - 5px;
+    padding-left: $padding - 10px;
 }
 
 // SECTION LOCATION
 
 .fa-map-marker-alt {
-    margin-right: 20px;
+    margin-right: $margin;
     font-size: 1.2rem;
     font-weight: bolder;
 }
@@ -29,7 +29,7 @@
 // titres du site page index
 .title {
     background-color: $grey;
-    padding: 40px 30px 60px 40px;
+    padding:  $padding + 20px  $padding + 10px  $padding + 40px  $padding + 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -37,7 +37,7 @@
     text-align: center;
 
     &__big {
-        margin-bottom: 10px;
+        margin-bottom: $margin;
         font-size: 1.9rem;
         font-weight: 700;
     }
@@ -45,7 +45,7 @@
     &__subtitle {
         font-size: 1.2rem;
         font-weight: 300;
-        margin-bottom: 30px;
+        margin-bottom: $margin;
     }
 
     &__btn {
@@ -55,9 +55,9 @@
 }
 
 .function__title {
-    margin-top: 20px;
+    margin-top: $margin;
     font-weight: 700;
-    padding-left: 35px;
+    padding-left:  $padding + 15px;
 }
 
 .function__content {
@@ -65,7 +65,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 15px;
+    margin-top: $margin - 5px;
 
     .function__element {
         @include bg-function;
@@ -102,12 +102,9 @@
 }
 
 .restaurant__title {
-    margin-top: 20px;
-    margin-left: 20px;
-    padding-top: 20px;
-    padding-left: 20px;
+    margin: $margin 0 0 $margin;
+    padding:  $padding  0 0  $padding ;
     font-weight: 700;
-
 }
 
 .restaurants__cards {
@@ -124,8 +121,7 @@
     display: flex;
     max-width: 300px;
     flex-direction: column;
-    margin-bottom: 20px;
-    margin-top: 20px;
+    margin: $margin 0;
     box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, .25);
     transition: 0.5s ease-in-out;
     transform: scale(1);
@@ -154,11 +150,8 @@
         @include heart;
 
         svg {
-            padding-left: 20px;
-            padding-top: 10px;
+            padding:  $padding - 10px 0 0  $padding ;
         }
-
-
     }
 
 }
@@ -171,7 +164,6 @@
     }
 }
 
-
 .page__title {
     display: flex;
     align-items: center;
@@ -180,8 +172,8 @@
         @include heart;
 
         svg {
-            margin-top: 10px;
-            padding-left: 50px;
+            margin-top: $margin - 10px;
+            padding-left:  $padding + 30px;
         }
 
     }
@@ -191,18 +183,12 @@
         letter-spacing: 0.5px;
         font-weight: 400;
         font-size: 1.3rem;
-        margin-left: 5%;
-        margin-top: 20px;
-
+        margin: $margin 0 0 $margin;
     }
- 
- 
- 
 }
 
 .sectMenu{
-    margin-top: 20px;
-    margin-left: 15px;
+    margin: $margin 0 0 $margin - 5px;
     animation: apparition 1s ease-out 0.4s;
 }
 .sectMenu__title{
@@ -213,34 +199,35 @@
         width: 40px;
         height: 3px;
         display: block;
-    animation: apparition 1.3s ease-out 0.2s;
+        animation: apparition 1.3s ease-out 0.2s;
 
     }
 }
 .checkbox{
     display: flex;
     transition: all 500ms ease-in-out ;
+
     
 
 }
 .menu__bg{
-    width:  320px;
+    width:  310px;
     height: 50px;
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
-    margin-top: 20px;
+    margin-top: $margin;
     box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, .25);
-    padding: 10px 0 10px 10px;
+    padding:  $padding - 10px 0  $padding - 10px   $padding - 10px;
     align-items: center;
     display: flex; 
     justify-content: space-between;
     overflow: hidden; 
   }
-  .menu__header{
-    
-    padding-right: 20px;
-    padding-left: 10px;
+  .menu__header{  
+    padding-right:  $padding ;
+    // padding-left:  $padding - 10px;
     cursor: pointer;
+    fon
    
     &:hover{
         overflow: hidden;
@@ -253,8 +240,6 @@
         .menu__confirm{
             .menu__icone{
                 transform: rotate(0deg);
-               
-
             }
         }
      
@@ -265,10 +250,7 @@
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-    font-size: 0.8rem;
-   
-  
-    
+    font-size: 0.9rem; 
   }
   .menu__description{
     overflow: hidden;
@@ -276,34 +258,30 @@
      text-overflow: ellipsis;
     font-weight: 300;
     font-size: 0.7rem;
-    
-  
+    margin-top: 4px;
   }
 
     
 .menu__price{
     font-weight: 700;
-    padding-right:10px ;
     margin-top: 20px;
     position: relative;
     left: 40px;
     top: 10px;
-    font-size: 14px;
-   
-   
-     
+    font-size: 14px; 
+    
   }
   .menu__confirm{
     background-color: #99e2d0;
     color: white;
     height: 52px;
-    width: 50px;
+    width: 52px;
     border-radius: 0px 10px 10px 0px;
     padding-top: 10px;
     text-align: center;
     font-size: 1.8rem;
     position: relative;
-    left: 55px;
+    left: 52px;
     
     .menu__icone{
         transform: rotate(180deg);

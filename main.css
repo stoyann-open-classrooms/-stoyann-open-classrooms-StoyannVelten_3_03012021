@@ -107,6 +107,10 @@ a {
   margin: auto;
 }
 
+.sectMenu {
+  padding-bottom: 40px;
+}
+
 .menu__all {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -797,5 +801,37 @@ fon
           transform: rotate(180deg);
   -webkit-transition-duration: 0.8s;
           transition-duration: 0.8s;
+}
+
+.menu__btn {
+  height: 50px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(29%, #9356dc), to(#ff79da));
+  background: linear-gradient(180deg, #9356dc 29%, #ff79da 100%);
+  border: none;
+  border-radius: 40px;
+  color: white;
+  font-size: 1rem;
+  font-weight: 300;
+  -webkit-box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  padding: 15px;
+  text-align: center;
+  width: 300px;
+  margin: auto;
+}
+
+.menu__btn:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.8);
+          box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.8);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(29%, #b281ee), to(#ff79da));
+  background: linear-gradient(180deg, #b281ee 29%, #ff79da 100%);
+  font-size: 1rem;
 }
 /*# sourceMappingURL=main.css.map */

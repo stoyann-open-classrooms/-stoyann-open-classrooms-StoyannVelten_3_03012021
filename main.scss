@@ -225,7 +225,6 @@
   }
   .menu__header{  
     padding-right:  $padding ;
-    // padding-left:  $padding - 10px;
     cursor: pointer;
     fon
    
@@ -291,5 +290,13 @@
 
   }
   
+
+  .menu__btn{
+    @include btn;
+    text-align: center;
+    width: 300px;
+    margin: auto;
+    
+  }
   
   

@@ -222,11 +222,13 @@
     display: flex; 
     justify-content: space-between;
     overflow: hidden; 
+    
   }
   .menu__header{  
-    padding-right:  $padding ;
+    padding-right:  2px ;
     cursor: pointer;
-    fon
+    
+
    
     &:hover{
         overflow: hidden;
@@ -258,6 +260,11 @@
     font-weight: 300;
     font-size: 0.7rem;
     margin-top: 4px;
+    padding-right: 10px;
+    
+    
+    
+    
   }
 
     

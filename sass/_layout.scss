@@ -25,7 +25,7 @@
 
 .footer {
     background-color: $dark;
-    height: 200px;
+    
     padding: $padding - 10px;
 
     .footer__content {
@@ -35,7 +35,7 @@
         .footer__logo {
             color: white;
             font-family: 'Shrikhand', cursive;
-            font-size: 1.3rem;
+            font-size: 1.5rem;
             margin-left: $margin;
             margin-bottom: $margin - 10px;
             margin-top: $margin;
@@ -47,6 +47,8 @@
         margin-left: $margin ;
         color: #fff;
         max-width: 1200px;
+        margin-top: $margin;
+        margin-bottom: $margin;
 
         li {
             margin-bottom: $margin - 10px;
@@ -113,13 +115,16 @@
             grid-column: 1/2;
             padding: $padding;
             margin-top: $margin;
+            
         }
 
         #sect-restau {
 
             grid-column: 2/3;
-            margin-top: $margin ;
+            margin-top: $margin +  $margin ;
+            margin-right: 20px;
             border-radius: 20px;
+            margin-bottom:  $margin + 20px;
         }
     }
 
@@ -130,7 +135,31 @@
     .function__content {
         display: flex;
     }
-
+   
+   
+.footer__content{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    
+  
+  
+  
+  
+   
+    
+   .footer__body{
+       display: flex;
+       margin-left: 40px;
+        
+       .body__link{
+           margin-left: 100px;
+           margin-right: 100px;
+       }
+      
+       
+   }
+}
 }
 
 @media only screen and (min-width: 1000px) {

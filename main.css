@@ -24,6 +24,16 @@ a {
   color: inherit;
 }
 
+.back__icon {
+  position: relative;
+  top: 20px;
+  left: 50px;
+}
+
+.back__icon a i {
+  font-size: 2rem;
+}
+
 .header {
   background-color: white;
   -webkit-box-shadow: 0 0 0.5rem #00000073;
@@ -254,16 +264,6 @@ a {
   stroke-miterlimit: 10;
   stroke-width: 2px;
   fill: url(#heart_degrade);
-}
-
-.back__icon {
-  position: relative;
-  top: 20px;
-  left: 50px;
-}
-
-.back__icon a i {
-  font-size: 2rem;
 }
 
 .load__bar {

@@ -63,39 +63,6 @@
                         stroke-width: 2px; 
                        fill: url(#heart_degrade);
                     } 
-
-                    @mixin heart {
-                        height: 30px;
-                        width: 30px;
-                        padding-top: $padding - 15px ;
-
-                        path {
-                            fill-opacity: 0;
-                            transition: all 1.3s;
-                            stroke-width: 20px;
-                            stroke: black;
-                            stroke-dasharray: 1560;
-                            stroke-dashoffset: 0;
-                        }
-
-                        path:hover {
-                            animation: animate-heart 2.5s linear forwards;
-                        }
-
-                    }
-
-                    .back__icon {
-                        position: relative;
-                        top: 20px;
-                        left: 50px;
-
-                        a {
-
-                            i {
-                                font-size: 2rem;
-                            }
-                        }
-                    }
                     
 
                     .load__bar {

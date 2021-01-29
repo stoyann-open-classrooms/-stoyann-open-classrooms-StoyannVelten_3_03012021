@@ -143,26 +143,28 @@
     min-width: 300px;
     max-width: 500px;
     flex-direction: column;
-    margin: $margin 0;
+    margin: $margin 5px;
     box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, .25);
     transition: 0.5s ease-in-out;
     transform: scale(1);
     height: 230px;
-    position: relative;
+  
 
     &__thumb {
-        // max-height: 250px;
+      
         border: 0 solid transparent;
         border-radius: 1rem 1rem 0 0;
         box-shadow: none;
         object-fit: cover;
         overflow: hidden;
+        position: relative;
     }
 
     &__footer {
-        padding: 10px 10px 5px 5px;
+        padding: 10px 0px 5px 5px;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
+        padding: 20px 10px;
     }
 
     &:hover {
@@ -172,10 +174,7 @@
 
     .heart__icon {
         @include heart;
-
-        svg {
-            padding:  $padding - 10px 0 0  $padding ;
-        }
+       
     }
 
 }
@@ -200,8 +199,8 @@
 
         svg {
              margin-top: $margin ;
-            // padding-left:  $padding + 30px;
            
+        
         }
 
     }
@@ -248,7 +247,7 @@
     border-radius: 10px;
     margin-top: $margin;
     box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, .25);
-    // padding:  $padding - 10px 0  $padding - 10px   $padding - 10px;
+  
  align-items: center;
     display: flex; 
     justify-content: space-between;

@@ -253,8 +253,8 @@ a {
   background-color: #99E2d0;
   padding: 5px;
   position: absolute;
-  -webkit-transform: translate(210px, 10px);
-          transform: translate(210px, 10px);
+  right: 3%;
+  top: 5%;
   text-align: center;
   color: #10392f;
 }
@@ -608,7 +608,7 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 20px 0;
+  margin: 20px 5px;
   -webkit-box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
           box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
   -webkit-transition: 0.5s ease-in-out;
@@ -616,7 +616,6 @@ a {
   -webkit-transform: scale(1);
           transform: scale(1);
   height: 230px;
-  position: relative;
 }
 
 .card__thumb {
@@ -627,15 +626,18 @@ a {
   -o-object-fit: cover;
      object-fit: cover;
   overflow: hidden;
+  position: relative;
 }
 
 .card__footer {
-  padding: 10px 10px 5px 5px;
+  padding: 10px 0px 5px 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 10px;
 }
 
 .card:hover {
@@ -664,10 +666,6 @@ a {
 .card .heart__icon path:hover {
   -webkit-animation: animate-heart 2.5s linear forwards;
           animation: animate-heart 2.5s linear forwards;
-}
-
-.card .heart__icon svg {
-  padding: 10px 0 0 20px;
 }
 
 .head__thumbs img {

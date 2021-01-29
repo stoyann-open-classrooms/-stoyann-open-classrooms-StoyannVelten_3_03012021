@@ -48,13 +48,14 @@
                     .badge {
                         width: 80px;
                         height: 30px;
+                        font-weight: 350;
                         background-color: $color-tiertiary;
                         padding:$padding - 15px ;
                         position: absolute;
                         right: 3%;
                         top: 5%;
                         text-align: center;
-                        color: darken($color-tiertiary, 60%);
+                        color: darken($color-tiertiary, 40%);
                     }
                   
                  // LES COEURS 

@@ -36,12 +36,13 @@ a {
 
 .header {
   background-color: white;
-  -webkit-box-shadow: 0 10px 200px #00000073;
-          box-shadow: 0 10px 200px #00000073;
+  -webkit-box-shadow: 0px 3px 2px rgba(49, 49, 49, 0.238);
+          box-shadow: 0px 3px 2px rgba(49, 49, 49, 0.238);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding-bottom: 10px;
+  z-index: 10;
 }
 
 .location {
@@ -62,6 +63,9 @@ a {
           align-items: center;
   padding-top: 10px;
   text-align: center;
+  z-index: 1;
+  position: relative;
+  top: 3.5px;
 }
 
 #sect-restau {
@@ -250,13 +254,14 @@ a {
 .badge {
   width: 80px;
   height: 30px;
+  font-weight: 350;
   background-color: #99E2d0;
   padding: 5px;
   position: absolute;
   right: 3%;
   top: 5%;
   text-align: center;
-  color: #10392f;
+  color: #278870;
 }
 
 .cls-1 {
@@ -461,7 +466,7 @@ a {
 }
 
 .title__subtitle {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 300;
   margin-bottom: 20px;
 }
@@ -514,7 +519,6 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 15px;
 }
 
 .function__content .function__element {
@@ -531,7 +535,7 @@ a {
   min-width: 290px;
   cursor: pointer;
   font-size: 0.7rem;
-  font-weight: 400;
+  font-weight: 700;
   position: relative;
 }
 
@@ -553,20 +557,20 @@ a {
 .function__content .function__element .circle {
   width: 20px;
   height: 20px;
+  font-size: 500;
   background-color: #9356DC;
   color: #fff;
   display: block;
   border-radius: 50%;
-  left: -50px;
   position: absolute;
-  left: -5px;
+  left: -10px;
   text-align: center;
   padding: 4px;
 }
 
 .function__content .function__element .fuction__txt {
   position: relative;
-  left: -30px;
+  left: -25px;
   font-weight: bolder;
   font-size: 0.8rem;
 }
@@ -577,7 +581,8 @@ a {
   color: #7e7e7e;
   justify-self: flex-end;
   position: relative;
-  left: -45px;
+  left: -40px;
+  top: 5%;
 }
 
 .restaurant__title {
@@ -608,7 +613,7 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 20px 5px;
+  margin: 20px 20px;
   -webkit-box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
           box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
   -webkit-transition: 0.5s ease-in-out;
@@ -666,6 +671,10 @@ a {
 .card .heart__icon path:hover {
   -webkit-animation: animate-heart 2.5s linear forwards;
           animation: animate-heart 2.5s linear forwards;
+}
+
+.card__title__big {
+  font-weight: 800;
 }
 
 .head__thumbs img {

@@ -36,8 +36,8 @@ a {
 
 .header {
   background-color: white;
-  -webkit-box-shadow: 0 0 0.5rem #00000073;
-          box-shadow: 0 0 0.5rem #00000073;
+  -webkit-box-shadow: 0 10px 200px #00000073;
+          box-shadow: 0 10px 200px #00000073;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -426,11 +426,13 @@ a {
   margin-right: 20px;
   font-size: 1.2rem;
   font-weight: bolder;
+  color: #545454;
 }
 
 .city {
-  font-size: 1.2rem;
-  font-weight: bolder;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #3b3b3b;
 }
 
 .title {
@@ -466,8 +468,8 @@ a {
 
 .title__btn {
   height: 50px;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(29%, #9356dc), to(#ff79da));
-  background: linear-gradient(180deg, #9356dc 29%, #ff79da 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(29%, #ff79da), to(#9356dc));
+  background: linear-gradient(180deg, #ff79da 29%, #9356dc 100%);
   border: none;
   border-radius: 40px;
   color: white;
@@ -488,8 +490,8 @@ a {
           transform: scale(1.05);
   -webkit-box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.8);
           box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.8);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(29%, #b281ee), to(#ff79da));
-  background: linear-gradient(180deg, #b281ee 29%, #ff79da 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(29%, #ff79da), to(#b281ee));
+  background: linear-gradient(180deg, #ff79da 29%, #b281ee 100%);
   font-size: 1rem;
 }
 
@@ -518,8 +520,8 @@ a {
 .function__content .function__element {
   background-color: #f6f6f6;
   margin: 20px;
-  padding-top: 15px;
-  height: 50px;
+  padding-top: 20px;
+  height: 65px;
   border-radius: 20px;
   text-align: center;
   -webkit-box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
@@ -527,10 +529,9 @@ a {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   min-width: 290px;
-  max-width: 350px;
   cursor: pointer;
-  font-size: 1rem;
-  font-weight: 600;
+  font-size: 0.7rem;
+  font-weight: 400;
   position: relative;
 }
 
@@ -542,7 +543,7 @@ a {
 .function__content .function__element:hover {
   -webkit-box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.4);
           box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.4);
-  background: rgba(146, 86, 220, 0.156) 30%;
+  background: rgba(146, 86, 220, 0.156) 40%;
 }
 
 .function__content .function__element:hover i {
@@ -560,6 +561,14 @@ a {
   position: absolute;
   left: -5px;
   text-align: center;
+  padding: 4px;
+}
+
+.function__content .function__element .fuction__txt {
+  position: relative;
+  left: -30px;
+  font-weight: bolder;
+  font-size: 0.8rem;
 }
 
 .function__content .function__element i {
@@ -568,7 +577,7 @@ a {
   color: #7e7e7e;
   justify-self: flex-end;
   position: relative;
-  left: -20px;
+  left: -45px;
 }
 
 .restaurant__title {
@@ -593,7 +602,8 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 300px;
+  min-width: 300px;
+  max-width: 500px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -605,10 +615,11 @@ a {
   transition: 0.5s ease-in-out;
   -webkit-transform: scale(1);
           transform: scale(1);
+  height: 230px;
+  position: relative;
 }
 
 .card__thumb {
-  max-height: 250px;
   border: 0 solid transparent;
   border-radius: 1rem 1rem 0 0;
   -webkit-box-shadow: none;
@@ -670,9 +681,10 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-right: 20px;
 }
 
 .page__title .heart__icon {
@@ -697,8 +709,7 @@ a {
 }
 
 .page__title .heart__icon svg {
-  margin-top: 10px;
-  padding-left: 50px;
+  margin-top: 20px;
 }
 
 .page__title .restaurant__name {
@@ -735,17 +746,23 @@ a {
   display: flex;
   -webkit-transition: all 500ms ease-in-out;
   transition: all 500ms ease-in-out;
+  height: 80px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .menu__bg {
-  width: 310px;
-  height: 50px;
+  width: 320px;
+  height: 60px;
   background-color: white;
   border-radius: 10px;
   margin-top: 20px;
   -webkit-box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
           box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
-  padding: 10px 0 10px 10px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -759,7 +776,7 @@ a {
 }
 
 .menu__header {
-  padding-right: 2px;
+  padding-left: 10px;
   cursor: pointer;
 }
 
@@ -793,12 +810,11 @@ a {
   font-weight: 300;
   font-size: 0.7rem;
   margin-top: 4px;
-  padding-right: 10px;
 }
 
 .menu__price {
   font-weight: 700;
-  margin-top: 20px;
+  margin-top: 15px;
   position: relative;
   left: 40px;
   top: 10px;
@@ -808,12 +824,12 @@ a {
 .menu__confirm {
   background-color: #99e2d0;
   color: white;
-  height: 52px;
+  height: 62px;
   width: 52px;
   border-radius: 0px 10px 10px 0px;
-  padding-top: 10px;
+  padding-top: 20px;
   text-align: center;
-  font-size: 1.8rem;
+  font-size: 1.2rem;
   position: relative;
   left: 52px;
 }
@@ -827,8 +843,8 @@ a {
 
 .menu__btn {
   height: 50px;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(29%, #9356dc), to(#ff79da));
-  background: linear-gradient(180deg, #9356dc 29%, #ff79da 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(29%, #ff79da), to(#9356dc));
+  background: linear-gradient(180deg, #ff79da 29%, #9356dc 100%);
   border: none;
   border-radius: 40px;
   color: white;
@@ -843,7 +859,7 @@ a {
           transform: scale(1);
   padding: 15px;
   text-align: center;
-  width: 300px;
+  width: 200px;
   margin: auto;
 }
 
@@ -852,8 +868,8 @@ a {
           transform: scale(1.05);
   -webkit-box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.8);
           box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.8);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(29%, #b281ee), to(#ff79da));
-  background: linear-gradient(180deg, #b281ee 29%, #ff79da 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(29%, #ff79da), to(#b281ee));
+  background: linear-gradient(180deg, #ff79da 29%, #b281ee 100%);
   font-size: 1rem;
 }
 /*# sourceMappingURL=main.css.map */

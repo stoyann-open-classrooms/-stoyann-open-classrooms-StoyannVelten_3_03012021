@@ -1,8 +1,9 @@
 .header {
     background-color: rgb(255, 255, 255);
-    box-shadow: 0 0 0.5rem #00000073;
+    box-shadow: 0 10px 200px #00000073;
     display: flex;
     padding-bottom: $padding - 10px;
+    
 }
 
 .location {

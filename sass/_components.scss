@@ -22,7 +22,7 @@
                     // BOUTONS COMMANDER 
                     @mixin btn {
                         height: 50px;
-                        background: linear-gradient(180deg, rgba(147, 86, 220, 1) 29%, rgba(255, 121, 218, 1) 100%);
+                        background: linear-gradient(180deg, rgba(255, 121, 218, 1) 29%,  rgba(147, 86, 220, 1) 100%);
                         border: none;
                         border-radius: 40px;
                         color: rgb(255, 255, 255);
@@ -37,7 +37,7 @@
                         &:hover {
                             transform: scale(1.05);
                             box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, .80);
-                            background: linear-gradient(180deg, rgb(178, 129, 238) 29%, rgba(255, 121, 218, 1) 100%);
+                            background: linear-gradient(180deg,rgba(255, 121, 218, 1)  29%,  rgb(178, 129, 238) 100%);
                             font-size: 1rem;
 
                         }

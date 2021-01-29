@@ -61,11 +61,10 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 10px;
   text-align: center;
   z-index: 1;
   position: relative;
-  top: 3.5px;
+  top: 3px;
 }
 
 #sect-restau {
@@ -586,7 +585,7 @@ a {
 }
 
 .restaurant__title {
-  margin: 20px 0 0 20px;
+  margin: 0 0 20px;
   padding: 20px 0 0 20px;
   font-weight: 700;
 }

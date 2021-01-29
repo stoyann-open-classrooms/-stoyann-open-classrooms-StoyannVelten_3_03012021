@@ -14,17 +14,18 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding-top: $padding - 10px;
     text-align: center;
     z-index: 1;
     position: relative;
-    top: 3.5px;
+    top: 3px;
 
 }
 
 #sect-restau {
     background-color: $grey;
     margin-top: $margin + 10px;
+   
+
 }
 
 

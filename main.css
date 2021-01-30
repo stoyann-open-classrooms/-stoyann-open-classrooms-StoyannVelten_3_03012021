@@ -556,7 +556,6 @@ a {
 .function__content .function__element .circle {
   width: 20px;
   height: 20px;
-  font-size: 500;
   background-color: #9356DC;
   color: #fff;
   display: block;
@@ -565,6 +564,8 @@ a {
   left: -10px;
   text-align: center;
   padding: 4px;
+  font-weight: lighter;
+  font-size: 10px;
 }
 
 .function__content .function__element .fuction__txt {

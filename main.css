@@ -43,11 +43,12 @@ a {
   display: flex;
   padding-bottom: 10px;
   z-index: 10;
+  padding: 1rem;
 }
 
 .location {
   background-color: #eaeaea;
-  height: 70px;
+  height: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -135,6 +136,9 @@ a {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-top: 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .menu-container {
@@ -467,7 +471,7 @@ a {
 .title__subtitle {
   font-size: 1rem;
   font-weight: 300;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .title__btn {
@@ -477,8 +481,8 @@ a {
   border: none;
   border-radius: 40px;
   color: white;
-  font-size: 1rem;
-  font-weight: 300;
+  font-size: 0.9rem;
+  font-weight: 400;
   -webkit-box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
           box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
   cursor: pointer;
@@ -486,7 +490,7 @@ a {
   transition: 0.5s;
   -webkit-transform: scale(1);
           transform: scale(1);
-  padding: 15px;
+  padding: 15px 20px;
 }
 
 .title__btn:hover {
@@ -500,9 +504,10 @@ a {
 }
 
 .function__title {
-  margin-top: 20px;
+  margin-top: 50px;
+  margin-left: 20px;
+  margin-bottom: 30px;
   font-weight: 700;
-  padding-left: 35px;
 }
 
 .function__content {
@@ -526,13 +531,14 @@ a {
   padding-top: 20px;
   height: 65px;
   border-radius: 20px;
-  text-align: center;
   -webkit-box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
           box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
   -webkit-transition: 0.5s;
   transition: 0.5s;
   min-width: 290px;
+  width: 70%;
   cursor: pointer;
+  padding-left: 80px;
   font-size: 0.7rem;
   font-weight: 700;
   position: relative;
@@ -570,7 +576,6 @@ a {
 
 .function__content .function__element .fuction__txt {
   position: relative;
-  left: -25px;
   font-weight: bolder;
   font-size: 0.8rem;
 }
@@ -586,8 +591,8 @@ a {
 }
 
 .restaurant__title {
-  margin: 0 0 20px;
-  padding: 20px 0 0 20px;
+  margin: 20px 20px 20px;
+  padding-top: 60px;
   font-weight: 700;
 }
 
@@ -607,13 +612,12 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  min-width: 300px;
-  max-width: 500px;
+  width: 80%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 20px 20px;
+  margin: 20px 0 20px;
   -webkit-box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
           box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
   -webkit-transition: 0.5s ease-in-out;
@@ -635,14 +639,13 @@ a {
 }
 
 .card__footer {
-  padding: 10px 0px 5px 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 20px 10px;
+  padding: 10px 10px;
 }
 
 .card:hover {
@@ -728,9 +731,11 @@ a {
 }
 
 .sectMenu {
+  padding-left: 20px;
   margin: 20px 0 0 15px;
   -webkit-animation: apparition 1s ease-out 0.4s;
           animation: apparition 1s ease-out 0.4s;
+  width: 100%;
 }
 
 .sectMenu__title {
@@ -763,7 +768,7 @@ a {
 }
 
 .menu__bg {
-  width: 320px;
+  width: 90%;
   height: 60px;
   background-color: white;
   border-radius: 10px;
@@ -855,8 +860,8 @@ a {
   border: none;
   border-radius: 40px;
   color: white;
-  font-size: 1rem;
-  font-weight: 300;
+  font-size: 0.9rem;
+  font-weight: 400;
   -webkit-box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
           box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
   cursor: pointer;
@@ -864,7 +869,7 @@ a {
   transition: 0.5s;
   -webkit-transform: scale(1);
           transform: scale(1);
-  padding: 15px;
+  padding: 15px 20px;
   text-align: center;
   width: 200px;
   margin: auto;

@@ -790,6 +790,7 @@ a {
 .menu__header {
   padding-left: 10px;
   cursor: pointer;
+  width: 100%;
 }
 
 .menu__header:hover {

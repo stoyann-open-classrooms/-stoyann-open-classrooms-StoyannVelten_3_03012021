@@ -4,6 +4,7 @@
     display: flex;
     padding-bottom: $padding - 10px;
     z-index: 10;
+    height: 60px;
     padding: 1rem;
     // box-shadow: 0 0 0.5rem rgb(0 0 0 / 25%);
     // position: relative;
@@ -46,7 +47,7 @@
         .footer__logo {
             color: white;
             font-family: 'Shrikhand', cursive;
-            font-size: 1.5rem;
+            font-size: 1rem;
             margin-left: $margin;
             margin-bottom: $margin - 10px;
             margin-top: $margin;
@@ -60,6 +61,7 @@
         max-width: 1200px;
         margin-top: $margin;
         margin-bottom: $margin;
+        font-size: 0.9rem;
 
         li {
             margin-bottom: $margin - 10px;

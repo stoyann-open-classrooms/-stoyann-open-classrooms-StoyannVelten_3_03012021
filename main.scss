@@ -7,9 +7,9 @@
 
 .header__logo {
     font-family: 'Shrikhand', cursive;
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin: auto;
-    padding-top: $padding - 5px;
+   
     padding-left: $padding - 10px;
 }
 
@@ -223,8 +223,8 @@
         font-family: 'Shrikhand', cursive;
         letter-spacing: 0.5px;
         font-weight: 400;
-        font-size: 1.3rem;
-        margin: $margin 0 0 $margin;
+        font-size: 1.2rem;
+        margin: $margin 0 0 $margin + 15px;
     }
 }
 
@@ -237,7 +237,7 @@
 }
 
 .sectMenu__title {
-    font-size: 1.2rem;
+    font-size: 1rem;
     // margin-left: -20px;
 
     &::after {
@@ -307,7 +307,7 @@
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
 }
 
 .menu__description {

@@ -80,6 +80,8 @@
 // ICONE COEURS CARDS RESTAURANTS
     .heart__icon{
         @include heart;
+      
+      
     }
 
 }
@@ -102,11 +104,12 @@
 }
 .back__icon {
     position: relative;
-    top: 20px;
+    top: 8px;
     left: 50px;
     a {
         i {
-            font-size: 2rem;
+            font-size: 1rem;
+            color: rgb(96, 96, 96);
         }
     }
 }

@@ -86,7 +86,7 @@ a {
 
 .footer .footer__content .footer__logo {
   color: white;
-  font-family: 'Shrikhand', cursive;
+  font-family: "Shrikhand", cursive;
   font-size: 1rem;
   margin-left: 20px;
   margin-bottom: 10px;
@@ -261,7 +261,7 @@ a {
   width: 80px;
   height: 30px;
   font-weight: 400;
-  background-color: #99E2d0;
+  background-color: #99e2d0;
   padding: 5px;
   position: absolute;
   right: 3%;
@@ -397,12 +397,12 @@ a {
   }
   80% {
     stroke-dashoffset: 3120;
-    stroke: #9356DC;
+    stroke: #9356dc;
   }
   100% {
     stroke-dashoffset: 3120;
     fill-opacity: 1;
-    stroke: #9356DC;
+    stroke: #9356dc;
   }
 }
 
@@ -415,20 +415,20 @@ a {
   }
   80% {
     stroke-dashoffset: 3120;
-    stroke: #9356DC;
+    stroke: #9356dc;
   }
   100% {
     stroke-dashoffset: 3120;
     fill-opacity: 1;
-    stroke: #9356DC;
+    stroke: #9356dc;
   }
 }
 
 .header__logo {
-  font-family: 'Shrikhand', cursive;
+  font-family: "Shrikhand", cursive;
   font-size: 1.5rem;
   margin: auto;
-  padding-left: 10px;
+  padding-left: 20px;
 }
 
 .fa-map-marker-alt {
@@ -537,7 +537,7 @@ a {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   min-width: 290px;
-  width: 70%;
+  width: 90%;
   cursor: pointer;
   padding-left: 80px;
   font-size: 0.7rem;
@@ -557,13 +557,13 @@ a {
 }
 
 .function__content .function__element:hover i {
-  color: #9356DC;
+  color: #9356dc;
 }
 
 .function__content .function__element .circle {
   width: 20px;
   height: 20px;
-  background-color: #9356DC;
+  background-color: #9356dc;
   color: #fff;
   display: block;
   border-radius: 50%;
@@ -613,7 +613,7 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 80%;
+  width: 90%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -724,15 +724,14 @@ a {
 }
 
 .page__title .restaurant__name {
-  font-family: 'Shrikhand', cursive;
+  font-family: "Shrikhand", cursive;
   letter-spacing: 0.5px;
   font-weight: 400;
   font-size: 1.2rem;
-  margin: 20px 0 0 35px;
+  margin: 20px 0 0 15px;
 }
 
 .sectMenu {
-  padding-left: 20px;
   margin: 20px 0 0 15px;
   -webkit-animation: apparition 1s ease-out 0.4s;
           animation: apparition 1s ease-out 0.4s;
@@ -745,9 +744,9 @@ a {
 
 .sectMenu__title::after {
   content: "";
-  background-color: #99E2d0;
-  width: 40px;
-  height: 3px;
+  background-color: #99e2d0;
+  width: 35px;
+  height: 2px;
   display: block;
   -webkit-animation: apparition 1.3s ease-out 0.2s;
           animation: apparition 1.3s ease-out 0.2s;

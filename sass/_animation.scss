@@ -3,7 +3,6 @@
     0% {
         transform: scaleY(0.5);
     }
-
     100% {
         transform: scaleY(1.0);
     }
@@ -13,11 +12,9 @@
     0% {
         opacity: 1;
     }
-
     80% {
         opacity: 1;
     }
-
     100% {
         opacity: 0;
         display: none;
@@ -26,12 +23,12 @@
 }
 
 // animation chargement des pages menus
+
 @keyframes apparition {
     from {
         opacity: 0;
         transform: translateY(200px);
     }
-
     to {
         opacity: 1;
         transform: translateY(0px);
@@ -39,20 +36,18 @@
 }
 
 // animation du coeur 
+
 @keyframes animate-heart {
     0% {
         stroke-dashoffset: 0;
     }
-
     40% {
         stroke-dashoffset: 1560;
     }
-
     80% {
         stroke-dashoffset: 3120;
         stroke: $color-primary;
     }
-
     100% {
         stroke-dashoffset: 3120;
         fill-opacity: 1;

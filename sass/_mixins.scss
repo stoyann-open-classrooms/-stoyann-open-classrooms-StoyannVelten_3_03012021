@@ -1,115 +1,107 @@
 @mixin bg-function {
-    background-color: $grey;
-    margin:  $margin;
-    padding-top:  $padding ;
-    height: 65px;
-    border-radius: 20px;
-    // text-align: center;
-     box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, .25);
-    transition: 0.5s;
-    min-width: 290px;
-    width: 70%;
-    cursor: pointer;
-    padding-left: 80px;
-    
-    
+  background-color: $grey;
+  margin: $margin;
+  padding-top: $padding;
+  height: 65px;
+  border-radius: 20px;
+  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+  transition: 0.5s;
+  min-width: 290px;
+  width: 90%;
+  cursor: pointer;
+  padding-left: 80px;
 
+  i {
+    transition: 0.2s;
+  }
 
-    i{
-        transition: 0.2s;
-        
-    }
-    &:hover{
-    box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, .40);
-    background:  rgba(146, 86, 220, 0.156) 40%,;
+  &:hover {
+    box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.4);
+    background: rgba(146, 86, 220, 0.156) 40%;
 
-    i{
-        color: $color-primary;
+    i {
+      color: $color-primary;
     }
-    }
+  }
 }
-
-
 
 // titre section index
 
 @mixin title-section {
-    font-size: 1.5em;
-    font-weight: bolder;
-    margin:  $margin + 10px 0 0  $margin + 20px;
-    align-self: flex-start;
+  font-size: 1.5em;
+  font-weight: bolder;
+  margin: $margin + 10px 0 0 $margin + 20px;
+  align-self: flex-start;
 }
 
 // titre menu-item
 
 @mixin title__section {
-    text-transform: uppercase;
-    @include font-size(1rem,bolder);
-    animation: apparition 0.8s ease-out;
-// soulignement titre menu-item
-     &::after {
-        content: "";
-        background-color: $color-tiertiary;
-    @include element-size( 40px,2px);
-        display: block;
-        animation: apparition 1.5s ease-out 0.4s;
-
-    }
+  text-transform: uppercase;
+  @include font-size(1rem, bolder);
+  animation: apparition 0.8s ease-out;
+  
+  &::after {
+    content: "";
+    background-color: $color-tiertiary;
+    @include element-size(40px, 2px);
+    display: block;
+    animation: apparition 1.5s ease-out 0.4s;
+  }
 }
 
 // cards plat
 
 @mixin menu-bg {
-   
-    background-color: rgb(255, 255, 255);
-    border-radius: 10px;
-    margin-top:  $margin;
-    box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, .25);
-    padding: 30px;
-    display: flex;
-     flex-direction: column;
-    animation: apparition 1s ease-in-out;
-    transform: scale(1);
-    transition: 0.2s;
-    
-    &:hover {
-    box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, .60);
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  margin-top: $margin;
+  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  animation: apparition 1s ease-in-out;
+  transform: scale(1);
+  transition: 0.2s;
+
+  &:hover {
+    box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.6);
     transform: scale(1.01);
-    }
+  }
 
-// ICONE COEURS CARDS RESTAURANTS
-    .heart__icon{
-        @include heart;
-      
-      
-    }
-
+  // ICONE COEURS CARDS RESTAURANTS
+ 
+  .heart__icon {
+    @include heart;
+  }
 }
 
 @mixin heart {
-    height: 30px;
-    width: 30px;
-    padding-top: $padding - 15px ;
-    path {
-        fill-opacity: 0;
-        transition: all 1.3s;
-        stroke-width: 20px;
-        stroke: black;
-        stroke-dasharray: 1560;
-        stroke-dashoffset: 0;
-    }
-    path:hover {
-        animation: animate-heart 2.5s linear forwards;
-    }
+  height: 30px;
+  width: 30px;
+  padding-top: $padding - 15px;
+  path {
+    fill-opacity: 0;
+    transition: all 1.3s;
+    stroke-width: 20px;
+    stroke: black;
+    stroke-dasharray: 1560;
+    stroke-dashoffset: 0;
+  }
+  path:hover {
+    animation: animate-heart 2.5s linear forwards;
+  }
 }
+
 .back__icon {
-    position: relative;
-    top: 8px;
-    left: 50px;
-    a {
-        i {
-            font-size: 1rem;
-            color: rgb(96, 96, 96);
-        }
+  position: relative;
+  top: 8px;
+  left: 50px;
+  a {
+    
+    i {
+      font-size: 1rem;
+      color: rgb(96, 96, 96);
     }
+  }
 }

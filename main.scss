@@ -6,356 +6,299 @@
 @import "./sass/animation";
 
 .header__logo {
-    font-family: 'Shrikhand', cursive;
-    font-size: 1.5rem;
-    margin: auto;
-   
-    padding-left: $padding - 10px;
+  font-family: "Shrikhand", cursive;
+  font-size: 1.5rem;
+  margin: auto;
+  padding-left: $padding;
 }
 
 // SECTION LOCATION
 
 .fa-map-marker-alt {
-    margin-right: $margin;
-    font-size: 1.2rem;
-    font-weight: bolder;
-    color: rgb(84, 84, 84);
-
+  margin-right: $margin;
+  font-size: 1.2rem;
+  font-weight: bolder;
+  color: rgb(84, 84, 84);
 }
 
 .city {
-    font-size: 1rem;
-    font-weight: bold;
-    color: rgb(59, 59, 59);
+  font-size: 1rem;
+  font-weight: bold;
+  color: rgb(59, 59, 59);
 }
 
 // titres du site page index
 .title {
-    background-color: $grey;
-    padding: $padding + 20px $padding + 10px $padding + 40px $padding + 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+  background-color: $grey;
+  padding: $padding + 20px $padding + 10px $padding + 40px $padding + 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 
-    &__big {
-        margin-bottom: $margin;
-        font-size: 1.9rem;
-        font-weight: 700;
-    }
+  &__big {
+    margin-bottom: $margin;
+    font-size: 1.9rem;
+    font-weight: 700;
+  }
 
-    &__subtitle {
-        font-size: 1rem;
-        font-weight: 300;
-        margin-bottom: $margin + 10px;
-    }
+  &__subtitle {
+    font-size: 1rem;
+    font-weight: 300;
+    margin-bottom: $margin + 10px;
+  }
 
-    &__btn {
-        @include btn;
-    }
-
+  &__btn {
+    @include btn;
+  }
 }
 
 .function__title {
-    margin-top: $margin + 30px;
-    margin-left: 20px;
-    margin-bottom: 30px;
-    font-weight: 700;
-    // padding-left: $padding + 15px;
-    
-
-    
-
+  margin-top: $margin + 30px;
+  margin-left: 20px;
+  margin-bottom: 30px;
+  font-weight: 700;
 }
 
 .function__content {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 
+  .function__element {
+    @include bg-function;
+    font-size: 0.7rem;
+    font-weight: 700;
+    position: relative;
 
-
-    .function__element {
-        @include bg-function;
-        font-size: 0.7rem;
-        font-weight: 700;
-        position: relative;
-
-
-
-
-
-
-        .circle {
-            width: 20px;
-            height: 20px;
-            background-color: $color-primary;
-            color: #fff;
-            display: block;
-            border-radius: 50%;
-            position: absolute;
-            left: -10px;
-            text-align: center;
-            padding: 4px;
-            font-weight: lighter;
-            font-size: 10px;
-        }
-
-        .fuction__txt {
-            position: relative;
-            // left: -25px;
-            font-weight: bolder;
-            font-size: 0.8rem;
-        }
-
-
-        i {
-            font-size: 1rem;
-            font-weight: 600;
-            color: #7e7e7e;
-            justify-self: flex-end;
-            position: relative;
-            left: -40px;
-            top: 5%;
-
-        }
-
+    .circle {
+      width: 20px;
+      height: 20px;
+      background-color: $color-primary;
+      color: #fff;
+      display: block;
+      border-radius: 50%;
+      position: absolute;
+      left: -10px;
+      text-align: center;
+      padding: 4px;
+      font-weight: lighter;
+      font-size: 10px;
     }
 
+    .fuction__txt {
+      position: relative;
+      // left: -25px;
+      font-weight: bolder;
+      font-size: 0.8rem;
+    }
+
+    i {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #7e7e7e;
+      justify-self: flex-end;
+      position: relative;
+      left: -40px;
+      top: 5%;
+    }
+  }
 }
 
-
-
-
-
 .restaurant__title {
-    margin: 20px 20px 20px;
-    // padding: $padding 0 0 $padding;
-    padding-top: 60px;
-    font-weight: 700;
+  margin: 20px 20px 20px;
+  padding-top: 60px;
+  font-weight: 700;
 }
 
 .restaurants__cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 // cards restaurants
 
 .card {
-    background-color: rgb(255, 255, 255);
-    border-radius: 1rem;
+  background-color: rgb(255, 255, 255);
+  border-radius: 1rem;
+  display: flex;
+  width: 90%;
+  flex-direction: column;
+  margin: $margin 0 $margin;
+  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+  transition: 0.5s ease-in-out;
+  transform: scale(1);
+  height: 230px;
+
+  &__thumb {
+    border: 0 solid transparent;
+    border-radius: 1rem 1rem 0 0;
+    box-shadow: none;
+    object-fit: cover;
+    overflow: hidden;
+    position: relative;
+  }
+
+  &__footer {
     display: flex;
-    width: 80%;
-     
-    // max-width: 500px;
-    flex-direction: column;
-    margin: $margin 0 $margin;
-    box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, .25);
-    transition: 0.5s ease-in-out;
-    transform: scale(1);
-    height: 230px;
+    justify-content: space-between;
+    padding: 10px 10px;
+  }
 
+  &:hover {
+    box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.65);
+    transform: scale(1.05);
+  }
 
-    &__thumb {
-
-        border: 0 solid transparent;
-        border-radius: 1rem 1rem 0 0;
-        box-shadow: none;
-        object-fit: cover;
-        overflow: hidden;
-        position: relative;
-    }
-
-    &__footer {
-        // padding: 10px 0px 5px 5px;
-        display: flex;
-        justify-content: space-between;
-        padding: 10px 10px;
-    }
-
-    &:hover {
-        box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, .65);
-        transform: scale(1.05);
-    }
-
-    .heart__icon {
-        @include heart;
-
-    }
-
+  .heart__icon {
+    @include heart;
+  }
 }
 
 .card__title__big {
-    font-weight: 800;
+  font-weight: 800;
 }
 
 .head__thumbs {
-    img {
-        height: 300px;
-        width: 100%;
-        object-fit: cover
-    }
+  img {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+  }
 }
 
 .page__title {
-    display: flex;
-    justify-content: space-between;
-    padding-right: $padding;
+  display: flex;
+  justify-content: space-between;
+  padding-right: $padding;
 
-
-    .heart__icon {
-        @include heart;
-
-
-        svg {
-            margin-top: $margin;
-
-
-        }
-
+  .heart__icon {
+    @include heart;
+    svg {
+      margin-top: $margin;
     }
+  }
 
-    .restaurant__name {
-        font-family: 'Shrikhand', cursive;
-        letter-spacing: 0.5px;
-        font-weight: 400;
-        font-size: 1.2rem;
-        margin: $margin 0 0 $margin + 15px;
-    }
+  .restaurant__name {
+    font-family: "Shrikhand", cursive;
+    letter-spacing: 0.5px;
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin: $margin 0 0 15px;
+  }
 }
 
 .sectMenu {
-    padding-left: 20px;
-    margin: $margin 0 0 $margin - 5px;
-    animation: apparition 1s ease-out 0.4s;
-    width: 100%;
-   
+  margin: $margin 0 0 $margin - 5px;
+  animation: apparition 1s ease-out 0.4s;
+  width: 100%;
 }
 
 .sectMenu__title {
-    font-size: 1rem;
-    // margin-left: -20px;
+  font-size: 1rem;
 
-    &::after {
-        content: "";
-        background-color: $color-tiertiary;
-        width: 40px;
-        height: 3px;
-        display: block;
-        animation: apparition 1.3s ease-out 0.2s;
-
-    }
+  &::after {
+    content: "";
+    background-color: $color-tiertiary;
+    width: 35px;
+    height: 2px;
+    display: block;
+    animation: apparition 1.3s ease-out 0.2s;
+  }
 }
 
 .checkbox {
-    display: flex;
-    transition: all 500ms ease-in-out;
-    height: 80px;
-    justify-content: center;
-    align-items: center;
-
-
-
+  display: flex;
+  transition: all 500ms ease-in-out;
+  height: 80px;
+  justify-content: center;
+  align-items: center;
 }
 
 .menu__bg {
-    width: 90%;
-    height: 60px;
-    background-color: rgb(255, 255, 255);
-    border-radius: 10px;
-    margin-top: $margin;
-    box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, .25);
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-    overflow: hidden;
-
-
+  width: 90%;
+  height: 60px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  margin-top: $margin;
+  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
 }
 
 .menu__header {
-    padding-left: 10px;
-    cursor: pointer;
-    width: 100%;
+  padding-left: 10px;
+  cursor: pointer;
+  width: 100%;
 
+  &:hover {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
 
+  &:hover + .checkbox {
+    transform: translate(-50px, 0px);
 
-    &:hover {
-        overflow: hidden;
-        white-space: nowrap;
-        text-overflow: ellipsis;
+    .menu__confirm {
+      .menu__icone {
+        transform: rotate(0deg);
+      }
     }
-
-    &:hover+.checkbox {
-        transform: translate(-50px, 0px);
-
-        .menu__confirm {
-            .menu__icone {
-                transform: rotate(0deg);
-            }
-        }
-
-    }
-
+  }
 }
 
 .menu__title {
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    font-size: 0.8rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 0.8rem;
 }
 
 .menu__description {
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    font-weight: 300;
-    font-size: 0.7rem;
-    margin-top: 4px;
-
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-weight: 300;
+  font-size: 0.7rem;
+  margin-top: 4px;
 }
 
-
 .menu__price {
-    font-weight: 700;
-    margin-top: 15px;
-    position: relative;
-    left: 40px;
-     top: 10px;
-    font-size: 14px;
-
+  font-weight: 700;
+  margin-top: 15px;
+  position: relative;
+  left: 40px;
+  top: 10px;
+  font-size: 14px;
 }
 
 .menu__confirm {
-    background-color: #99e2d0;
-    color: white;
-    height: 62px;
-    width: 52px;
-    border-radius: 0px 10px 10px 0px;
-    padding-top: 20px;
-    text-align: center;
+  background-color: #99e2d0;
+  color: white;
+  height: 62px;
+  width: 52px;
+  border-radius: 0px 10px 10px 0px;
+  padding-top: 20px;
+  text-align: center;
+  font-size: 1.2rem;
+  position: relative;
+  left: 52px;
 
-    font-size: 1.2rem;
-    position: relative;
-    left: 52px;
-
-    .menu__icone {
-        transform: rotate(180deg);
-        transition-duration: 0.8s;
-
-    }
-
+  .menu__icone {
+    transform: rotate(180deg);
+    transition-duration: 0.8s;
+  }
 }
 
-
 .menu__btn {
-    @include btn;
-    text-align: center;
-    width: 200px;
-    margin: auto;
+  @include btn;
+  text-align: center;
+  width: 200px;
+  margin: auto;
 }
